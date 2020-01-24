@@ -1,1 +1,23 @@
-// Mixins Here
+.button(@button-color:#23293B; @btn-bg:white)
+{
+          border-radius:.5rem;
+          color:@btn-bg;
+          background-color:@button-color;
+          border-color:@button-color;
+          padding: .5rem 1.5rem;
+          &:hover{
+              color:@button-color;
+              background-color:@btn-bg;
+              border-color: @btn-bg;
+
+          }
+}
+.display-flex(){
+display:flex;
+justify-content: center;
+}
+.container(){
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;  
+}
